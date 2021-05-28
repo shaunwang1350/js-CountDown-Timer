@@ -1,4 +1,4 @@
-const newYears = "1st Jan 2022";
+const newYears = "1 Jan 2022";
 
 const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
@@ -6,7 +6,7 @@ const minsEl = document.getElementById('minutes');
 const secondsEl = document.getElementById('seconds');
 
 function countdown(){
-    const newYearsDate = new DataCue(newYears);
+    const newYearsDate = new Date(newYears);
     const currentDate = new Date();
 
     const totalSeconds = (newYearsDate - currentDate) / 1000;
